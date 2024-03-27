@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="input.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Bhawesh Madhwani</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-links-a">About</a></li>
+          <li><a href="#skills" class="nav-links-a">Skills</a></li>
+          <li><a href="#work" class="nav-links-a">Work</a></li>
+          <li><a href="#contact" class="nav-links-a">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Bhawesh Madhwani</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#work" onclick="toggleMenu()">Work</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./images/linkedin_profile.jpg"
+          alt="Bhawesh Madhwani profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Bhawesh Madhwani</h1>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('https://docs.google.com/document/d/1y3JyYCPy3TFD2OJVigV_X60GChHcokv6WEq1-APQ6_c/edit?usp=sharing')"
+          >
+            Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./images/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/bhawesh-madhwani/'"
+          />
+          <img
+            src="./images/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/bmad-221B'"
+          />
+          <img
+            src="./images/codeforces.png"
+            alt="My Codeforces profile"
+            class="icon"
+            onclick="location.href='https://codeforces.com/profile/Sakuna'"
+          />
+          <img
+            src="./images/x1.png"
+            alt="My Twitter profile"
+            class="icon"
+            onclick="location.href='https://twitter.com/BhaweshMadhwani'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./images/whatsapp_dp.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./images/sprinklr.png" alt="skills icon" class="icon" />
+              <h3>Sprinklr</h3>
+              <p id="startDate" class="inline-paragraph">July 2023</p> - <p id="endDate" class="inline-paragraph">Present</p>  
+                <p id="duration"></p>
+              <p>Product Engineer(ML)</p>
+            </div>
+            <div class="details-container">
+              <img src="./images/uber.png" alt="skills icon" class="icon" />
+              <h3>Uber</h3>
+              <p>Jan 2023 - June 2023</p>
+              <p>6 Mos</p>
+              <p>Software Engineer Intern</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./images/iit_ism.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>IIT(ISM) Dhanbad</h3>
+              <p>
+                <p>Aug 2018 - May 2023</p>  
+                <p>4 Yrs 10 Mos</p>
+              </p>
+              <p>
+                B.Tech CSE<br />
+                + <br />
+                M.Tech CSE
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              A Product Engineer at <b>Sprinklr</b> with a
+              <b
+                >Bachelor's and Master's in Computer Science and Engineering
+                from IIT(ISM) Dhanbad </b
+              >. Skilled in optimizing entity linking models for social
+              listening, designing high-performing multilingual entity linking
+              models, and empowering clients with custom entity linking
+              insights. Previously interned at <b>Uber</b>, building a website
+              parser for data extraction. Passionate about technology,
+              productivity, reading, anime, and writing articles on tech and
+              productivity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Tech Stack</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Tech Stack</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Redis</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tailwind CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="work">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Work</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/sprinklr.png"
+                alt="Sprinklr"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Sprinklr</h2>
+            <div class="project-container">
+                <p id="startDate1" class="inline-paragraph">July 2023</p> - <p id="endDate1" class="inline-paragraph">Present</p>  
+                <p id="duration1"></p>
+                <p>Product Engineer</p>
+                <br/>
+                <p class="project-container-text"> Worked in the design and implementation of a sophisticated multilingual entity linking model, 
+                    demonstrating performance on par with a benchmark Meta paper.
+                </p>
+                <br/>
+                <p class="project-container-text"> Strategically optimized Sprinklr's English Entity Linking model, improving latency and reducing costs, 
+                    enabling clients to efficiently extract insights from massive real-time data.
+                </p>
+                <br/>
+                <p class="project-container-text"> Implemented custom entity linking support, where clients can list their entities, 
+                    which are then judged on Twitter firehose data along with pre-existing entities from the knowledge base.
+                </p>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/uber.png"
+                alt="Uber"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Uber</h2>
+            <div class="project-container">
+                <p>Jan 2023 - June 2023</p>
+                <p>6 Mos</p>
+                <p>Software Engineer Intern</p>
+                <br/>
+                <p class="project-container-text"> Developed a versatile website parser designed to extract relevant data from a broad 
+                    spectrum of websites within the restaurant and grocery domains.
+                </p>
+                <br/>
+                <p class="project-container-text"> Spearheaded the creation of a singular parser capable of efficiently parsing diverse 
+                    data types across various websites.
+                </p>
+                <br/>
+                <p class="project-container-text"> Contributed to enhancing data extraction efficiency and adaptability, 
+                    streamlining the parsing process for improved functionality and reliability.
+                </p>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/iit_ism.png"
+                alt="IIT(ISM) Dhanbad"
+                class="project-img"
+                id="project-iit-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">IIT(ISM) Dhanbad</h2>
+            <div class="project-container">
+                <p>Aug 2022 - May 2023</p>
+                <p>10 Mos</p>
+                <p> Network Intrusion Detection Systems using Zero Shot Classifiers</p>
+                <br/>
+                <p class="project-container-text"> Conducted an exhaustive study aimed at enhancing IoT security through the assessment of Machine Learning (ML) 
+                    algorithms for Intrusion Detection Systems (IDS). 
+                </p>
+                <br/>
+                <p class="project-container-text"> Conducted a comparative analysis involving Classical ML algorithms 
+                    (k-Means, kNN, Logistic Regression) and various Deep Neural Network models.
+                </p>
+                <br/>
+                <p class="project-container-text"> Implemented ZSL within the IDS, identifying new attacks not present in the training 
+                    data, and providing a robust tool for real-time detection and prevention of cyber threats.
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./images/gmail.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:221bmad@gmail.com">221bmad@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./images/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/bhawesh-madhwani/">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+        <!-- Write Something -->
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        // window.onload = get_duration;
+        let element1 = document.getElementById("startDate");
+        let element2 = document.getElementById("endDate");
+        let element3 = document.getElementById("duration");
+        get_duration(element1, element2, element3);
+
+        element1 = document.getElementById("startDate1");
+        element2 = document.getElementById("endDate1");
+        element3 = document.getElementById("duration1");
+        get_duration(element1, element2, element3);
+    </script>
+  </body>
+</html>
